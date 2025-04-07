@@ -105,7 +105,7 @@ int main(void)
       if (status == 0xFFFFFFFF) {
           // Kommunikationsproblem - Blinken Sie eine LED als Fehleranzeige
           while (1) {
-              HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1); // Beispiel: LED an PA1
+              HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_9); 
               HAL_Delay(200);
           }
       TMC5160_SetCurrents(20, 10, 5);
